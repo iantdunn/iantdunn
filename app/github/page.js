@@ -12,8 +12,8 @@ export default function GitHubRedirect() {
         <main>
             <h1>Redirecting to GitHub...</h1>
             <p>
-                {"If you're not redirected automatically,"}
-                <a href="https://github.com/ian1dunn"> click here to visit my GitHub profile</a>.
+                {"If you're not redirected automatically, "}
+                <a href="https://github.com/ian1dunn">click here to visit my GitHub profile</a>.
             </p>
         </main>
     );
