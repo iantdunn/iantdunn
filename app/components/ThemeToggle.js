@@ -5,15 +5,13 @@ import { usePathname } from "next/navigation";
 import "./ThemeToggle.css";
 
 export default function ThemeToggle() {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState(null);
     const pathname = usePathname();
 
     const applyTheme = (newTheme) => {
         const root = document.documentElement;
         root.classList.remove("light", "dark");
-        if (newTheme) {
-            root.classList.add(newTheme);
-        }
+        root.classList.add(newTheme);
     };
 
     useEffect(() => {
@@ -22,7 +20,7 @@ export default function ThemeToggle() {
         applyTheme(savedTheme);
     }, []);
 
-    // Don"t show theme toggle on resume page
+    // Don't show theme toggle on resume page
     if (pathname === "/resume") {
         return null;
     }

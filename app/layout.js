@@ -8,7 +8,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      { /* TODO suppressing the hydration warning, while technically correct, is a very wonky fix */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme') || 'dark';
+                document.documentElement.className = savedTheme;
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="antialiased">
         <ThemeToggle />
         {children}
