@@ -1,5 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function NotFound() {
     const pathname = usePathname();
@@ -9,7 +10,7 @@ export default function NotFound() {
             <div className="text-center">
                 <h1>404</h1>
                 <p className="mb-2"> The page {pathname} does not exist</p>
-                <a href="/">Go Home</a>
+                <Link href="/">Go Home</Link>
             </div>
         </div>
     );
