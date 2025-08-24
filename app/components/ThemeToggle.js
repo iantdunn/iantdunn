@@ -8,6 +8,14 @@ export default function ThemeToggle() {
     const [theme, setTheme] = useState("dark");
     const pathname = usePathname();
 
+    const applyTheme = (newTheme) => {
+        const root = document.documentElement;
+        root.classList.remove("light", "dark");
+        if (newTheme) {
+            root.classList.add(newTheme);
+        }
+    };
+
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme") || "dark";
         setTheme(savedTheme);
@@ -18,14 +26,6 @@ export default function ThemeToggle() {
     if (pathname === "/resume") {
         return null;
     }
-
-    const applyTheme = (newTheme) => {
-        const root = document.documentElement;
-        root.classList.remove("light", "dark");
-        if (newTheme) {
-            root.classList.add(newTheme);
-        }
-    };
 
     const handleThemeChange = (newTheme) => {
         setTheme(newTheme);
