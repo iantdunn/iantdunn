@@ -6,8 +6,8 @@ export default function Home() {
       <section>
         <ul className="space-y-1">
           <li><a href="/resume">Resume</a></li>
-          <li><a href="/github">GitHub</a></li>
-          <li><a href="/linkedin">LinkedIn</a></li>
+          <li><a href="https://github.com/iantdunn">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/iantdunn/">LinkedIn</a></li>
         </ul>
       </section>
     </main>
