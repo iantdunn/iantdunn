@@ -1,11 +1,9 @@
-'use client';
-
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function GitHubRedirect() {
     useEffect(() => {
         // Redirect to GitHub profile
-        window.location.href = 'https://github.com/ian1dunn';
+        window.location.href = "https://github.com/ian1dunn";
     }, []);
 
     return (
