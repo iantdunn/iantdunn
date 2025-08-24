@@ -2,9 +2,9 @@ export default function Home() {
   return (
     <main>
       <h1>Ian Dunn</h1>
-      <p className="mb-3">{"I'm a software engineer specializing in enterprise backend systems and web development."}</p>
+      <p className="mb-2">{"I'm a software engineer specializing in enterprise backend systems and web development."}</p>
       <section>
-        <ul>
+        <ul className="space-y-1">
           <li><a href="/resume">Resume</a></li>
           <li><a href="/github">GitHub</a></li>
         </ul>
