@@ -1,5 +1,7 @@
 .resumeContainer {
     text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 /* Override body centering for resume page */
@@ -14,6 +16,8 @@
 }
 
 .resumeContainer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
     border-bottom: 2px solid var(--foreground);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -22,6 +26,8 @@
 }
 
 .resumeContainer h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.2rem;

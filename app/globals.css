@@ -38,47 +38,13 @@ body {
   flex-direction: column;
 }
 
-.navbar {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--foreground);
-  border-opacity: 0.1;
-  min-height: 60px;
-  position: relative;
-}
-
-.navbar-left {
-  position: absolute;
-  left: 1rem;
-}
-
-.navbar-right {
-  position: absolute;
-  right: 1rem;
-}
-
-.resume-navigation {
-  display: flex;
-  gap: 1rem;
-}
-
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-}
-
-/* Resume page should be left-aligned and not centered */
-main.resume-page {
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
 }
 
 h1 {
@@ -86,50 +52,11 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: var(--foreground);
-  margin: 2rem 0;
-  opacity: 0.3;
-}
-
 a {
   text-decoration: underline;
+  transition: all 0.2s ease;
 }
 
 a:hover {
-  opacity: 0.7;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.navLink {
-  text-decoration: underline;
-  color: var(--foreground);
-  font-family: inherit;
-  transition: opacity 0.2s ease;
-}
-
-.navLink:hover {
   opacity: 0.7;
 }

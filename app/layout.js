@@ -1,6 +1,5 @@
 import "./globals.css";
-import ThemeToggle from "./components/ThemeToggle";
-import ResumeNavigation from "./components/ResumeNavigation";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: "Ian Dunn",
@@ -24,14 +23,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
-        <nav className="navbar">
-          <div className="navbar-left">
-            <ResumeNavigation />
-          </div>
-          <div className="navbar-right">
-            <ThemeToggle />
-          </div>
-        </nav>
+        <Navbar />
         {children}
       </body>
     </html>
