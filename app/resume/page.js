@@ -25,7 +25,7 @@ export default async function ResumePage() {
     const markdown = await getMarkdown();
 
     return (
-        <main className={`resume-page ${styles.resumeContainer}`}>
+        <main className={`${styles.resumeContainer}`}>
             <ReactMarkdown>
                 {markdown}
             </ReactMarkdown>
