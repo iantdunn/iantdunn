@@ -35,9 +35,50 @@ body {
   text-align: center;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--foreground);
+  border-opacity: 0.1;
+  min-height: 60px;
+  position: relative;
+}
+
+.navbar-left {
+  position: absolute;
+  left: 1rem;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 1rem;
+}
+
+.resume-navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+}
+
+/* Resume page should be left-aligned and not centered */
+main.resume-page {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
 }
 
 h1 {
@@ -69,4 +110,26 @@ hr {
 
 a {
   text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navLink {
+  text-decoration: underline;
+  color: var(--foreground);
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.navLink:hover {
+  opacity: 0.7;
 }

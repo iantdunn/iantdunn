@@ -20,11 +20,6 @@ export default function ThemeToggle() {
         applyTheme(savedTheme);
     }, []);
 
-    // Don't show theme toggle on resume page
-    if (pathname === "/resume/pdf") {
-        return null;
-    }
-
     const handleThemeChange = (newTheme) => {
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
