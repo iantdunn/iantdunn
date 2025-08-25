@@ -1,0 +1,32 @@
+.resumeContainer {
+    text-align: left;
+}
+
+/* Override body centering for resume page */
+.resumeContainer h1 {
+    margin-top: 0;
+}
+
+.resumeContainer h1+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.resumeContainer h2 {
+    border-bottom: 2px solid var(--foreground);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.resumeContainer h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.resumeContainer ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}

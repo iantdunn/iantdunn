@@ -21,7 +21,7 @@ export default function ThemeToggle() {
     }, []);
 
     // Don't show theme toggle on resume page
-    if (pathname === "/resume") {
+    if (pathname === "/resume/pdf") {
         return null;
     }
 

@@ -1,10 +1,34 @@
-export default function ResumePage() {
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import fs from "fs";
+import path from "path";
+import styles from './resume.module.css'
+
+async function getMarkdown() {
+    const res = await fetch(
+        "https://raw.githubusercontent.com/ian1dunn/resume/main/Ian_Dunn_Resume.md",
+        { cache: "no-store" } // fetch fresh content
+    );
+    return res.text();
+
+    // try {
+    //     const filePath = path.join(process.cwd(), 'app', 'resume', 'resume-test.md');
+    //     const markdown = fs.readFileSync(filePath, 'utf8');
+    //     return markdown;
+    // } catch (error) {
+    //     console.error('Error reading markdown file:', error);
+    //     return 'Error loading resume content.';
+    // }
+}
+
+export default async function ResumePage() {
+    const markdown = await getMarkdown();
+
     return (
-        <div style={{ width: '100vw', height: '100vh', margin: 0, padding: 0 }}>
-            <iframe
-                src="https://cdn.jsdelivr.net/gh/iantdunn/resume/Ian_Dunn_Resume.pdf"
-                style={{ width: '100%', height: '100vh' }}
-            />
-        </div>
+        <main className={styles.resumeContainer}>
+            <ReactMarkdown>
+                {markdown}
+            </ReactMarkdown>
+        </main>
     );
 }
