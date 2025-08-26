@@ -22,11 +22,11 @@ export default function Navbar() {
 
             <div className="navbar-right">
                 {pathname === "/resume" && (
-                    <Link href="/resume/pdf" className="navLink">View PDF</Link>
+                    <Link href="/resume/text" className="navLink">View Text</Link>
                 )}
 
-                {pathname === "/resume/pdf" && (
-                    <Link href="/resume" className="navLink">View Text</Link>
+                {pathname === "/resume/text" && (
+                    <Link href="/resume" className="navLink">View PDF</Link>
                 )}
             </div>
         </nav>
