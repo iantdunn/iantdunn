@@ -4,12 +4,11 @@ import fs from "fs";
 import path from "path";
 import styles from './resume.module.css'
 
-const resumeLink = "https://github.com/iantdunn/resume/blob/main/Ian_Dunn_Resume.md";
-const resumeLinkRaw = "https://raw.githubusercontent.com/ian1dunn/resume/main/Ian_Dunn_Resume.md";
+const resumeLink = "https://iantdunn.github.io/resume/Ian_Dunn_Resume.md";
 
 async function getMarkdown() {
     const res = await fetch(
-        resumeLinkRaw,
+        resumeLink,
         { cache: "no-store" } // fetch fresh content
     );
     return res.text();
