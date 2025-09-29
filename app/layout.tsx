@@ -1,15 +1,20 @@
+import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Ian Dunn",
   description: "Ian Dunn's personal website.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      { /* TODO suppressing the hydration warning, while technically correct, is a very wonky fix */}
+      {/* TODO suppressing the hydration warning, while technically correct, is a very wonky fix */}
       <head>
         <script
           dangerouslySetInnerHTML={{
