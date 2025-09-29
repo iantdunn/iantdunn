@@ -1,7 +1,5 @@
 # Subdomain redirects
-https://github.iantdunn.com/* https://github.com/iantdunn 301!
-https://resume.iantdunn.com/* https://iantdunn.com/resume 301!
-https://linkedin.iantdunn.com/* https://linkedin.com/in/iantdunn 301!
 
-# Fallback for main site
-/* /index.html 200
+https://github.iantdunn.com/_ https://github.com/iantdunn 301!
+https://resume.iantdunn.com/_ https://iantdunn.com/resume 301!
+https://linkedin.iantdunn.com/* https://linkedin.com/in/iantdunn 301!
