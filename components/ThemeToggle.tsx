@@ -33,6 +33,7 @@ export default function ThemeToggle(): JSX.Element {
         className={`cursor-pointer opacity-60 hover:opacity-100 hover:underline transition-all duration-200 ease-in ${
           theme === "light" ? "opacity-100 underline" : ""
         }`}
+        aria-label="Toggle Light Mode"
       >
         Light
       </button>
@@ -41,7 +42,7 @@ export default function ThemeToggle(): JSX.Element {
         className={`cursor-pointer opacity-60 hover:opacity-100 hover:underline transition-all duration-200 ease-in ${
           theme === "dark" ? "opacity-100 underline" : ""
         }`}
-        aria-label="Switch to dark mode"
+        aria-label="Toggle Dark Mode"
       >
         Dark
       </button>
