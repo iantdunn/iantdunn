@@ -1,19 +1,17 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full border-b p-4">
-      <div className="flex flex-1 justify-start">
-        {pathname !== "/" && <Link href="/">← Home</Link>}
-      </div>
+    <nav className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between border-b p-4">
+      <div className="flex flex-1 justify-start">{pathname !== "/" && <Link href="/">← Home</Link>}</div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <ThemeToggle />
       </div>
 

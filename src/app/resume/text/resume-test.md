@@ -9,6 +9,7 @@ iantdunn@gmail.com
 [iantdunn.com](https://iantdunn.com)
 
 ## EXPERIENCE
+
 ### Mindex
 
 **Associate Java Software Engineer** Oct 2024 - Present | Remote
@@ -27,6 +28,7 @@ iantdunn@gmail.com
 - Deployed a scalable back-end platform and a custom open-source analysis utility using Docker.
 
 ## PROJECTS
+
 ### [outthebasement.com](https://outthebasement.com)
 
 **Out the Basement Toys & Collectibles** May 2025
@@ -50,6 +52,7 @@ iantdunn@gmail.com
 - Engineered the agent to avoid obstacles on its own using reinforcement learning without external libraries.
 
 ## LEADERSHIP
+
 ### RIT Neurotechnology Exploration Team
 
 **Wheelchair Project Co-Investigator** Dec 2023 - May 2024 | Rochester, NY
@@ -58,6 +61,7 @@ iantdunn@gmail.com
 - Conducted an IRB-approved human subject research study to collect model training data.
 
 ## EDUCATION
+
 ### Rochester Institute of Technology
 
 **Bachelor of Science in Computer Science** Aug 2021 - May 2024 | Rochester, NY
@@ -65,11 +69,13 @@ iantdunn@gmail.com
 - Relevant Coursework: Algorithms, Computer Vision, Data Analysis, Database Management, Machine Learning & AI.
 
 ## SKILLS
-**Languages:** Bash, C, C#, Java, JavaScript/HTML/CSS, MATLAB, MIPS Assembly, MongoDB, PHP, Python, SQL (Oracle, Postgres)
+
+**Languages:** Bash, C, C#, Java, JavaScript/HTML/CSS, MATLAB, MIPS Assembly, MongoDB, PHP, Python, SQL (Oracle,
+Postgres)
 
 **Frameworks:** Angular, Bootstrap, Django, Express, Flask, JUnit, Kafka, Nginx, Node.js, React
 
-**Developer Tools:** Ant, BitBucket, Confluence, Docker, Eclipse MAT, Git, Jenkins, JetBrains Suite, Jira, OpenShift, 
+**Developer Tools:** Ant, BitBucket, Confluence, Docker, Eclipse MAT, Git, Jenkins, JetBrains Suite, Jira, OpenShift,
 
 Splunk, Trello, Visual Studio, XL Deploy
 
