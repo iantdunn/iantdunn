@@ -1,6 +1,6 @@
 ## Hi, I'm Ian 👋
 
-### My Work
+### Personal Projects
 
 - **Current Projects:**
   - [Out the Basement Toys & Vintage](https://outthebasement.com/) - A full-stack inventory system built for a client who just started his business. Code is private.
@@ -15,6 +15,6 @@
 - **RIT Laboratory of Software Design and Productivity** - [SBOM-in-a-Box](https://github.com/SoftwareDesignLab/SBOM-in-a-Box) - A full-stack unified platform to generate high fidelity SBOM data. It automates production, consumption, and utilization of Software Bills of Materials (SBOMs).
 - **RIT Neurotechnology Exploration Team** - [Wheelchair Project Data Collector](https://github.com/Neurotechnology-Exploration-Team/DataCollector) - Tkinter GUI application to capture brain activity in response to audiovisual stimuli.
 
-- **Languages:**
+### Languages
   - Proficient: Java, Python, JavaScript, HTML/CSS, SQL
   - Familiar: C, C#, MIPS Assembly, MongoDB, Bash, MATLAB, PHP
